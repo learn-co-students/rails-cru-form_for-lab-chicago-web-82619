@@ -1,0 +1,7 @@
+<h1>Songs Page</h1>
+
+<% @songs.each do |song| %>
+    <p><%= link_to song.name, song_path(song) %> by <%= song.artist.name %> / <%= song.genre.name %></p>
+<% end %>
+
+<%= link_to "New Song", new_song_path %>
