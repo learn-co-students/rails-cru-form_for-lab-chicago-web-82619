@@ -1,0 +1,7 @@
+<h3><%= label_tag "name" %></h3>
+<h1><%= @artist.name %></h1>
+<h3><%= label_tag "bio" %></h3>
+<p><%= @artist.bio %></p>
+
+<%= link_to "All Artists", artists_path %>
+<%= link_to "Edit Artist", edit_artist_path(@artist) %>
